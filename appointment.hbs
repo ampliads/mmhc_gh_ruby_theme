@@ -1,0 +1,243 @@
+{{!< default}}
+
+{{!-- MMHC Appointment Page --}}
+<main class="site-main">
+    <article class="gh-article appointment-page">
+        
+        <header class="gh-article-header gh-canvas">
+            <h1 class="gh-article-title">Book Your Appointment</h1>
+            <p class="gh-article-excerpt">
+                Take the first step towards optimal health and wellness for you and your family
+            </p>
+        </header>
+
+        <div class="gh-content gh-canvas">
+            
+            {{!-- Introduction --}}
+            <section class="appointment-intro">
+                <p class="intro-text">
+                    We're here to support you on your journey to optimal health. Whether you're seeking care for 
+                    yourself, your child, or your family, our team of experienced practitioners is ready to 
+                    provide personalized, compassionate care tailored to your unique needs.
+                </p>
+            </section>
+
+            {{!-- Appointment Types --}}
+            <section class="appointment-types">
+                <h2>Choose Your Consultation Type</h2>
+                <div class="consultation-grid">
+                    <div class="consultation-card">
+                        <h3>Initial Consultation</h3>
+                        <div class="consultation-duration">90 minutes</div>
+                        <p>Comprehensive health assessment and personalized treatment plan development</p>
+                        <ul>
+                            <li>Detailed health history review</li>
+                            <li>Constitutional analysis</li>
+                            <li>Treatment recommendations</li>
+                            <li>Lifestyle guidance</li>
+                        </ul>
+                    </div>
+                    <div class="consultation-card">
+                        <h3>Follow-up Consultation</h3>
+                        <div class="consultation-duration">45 minutes</div>
+                        <p>Progress review and treatment plan adjustments for existing patients</p>
+                        <ul>
+                            <li>Treatment progress evaluation</li>
+                            <li>Remedy adjustments</li>
+                            <li>Ongoing support</li>
+                            <li>Questions and concerns</li>
+                        </ul>
+                    </div>
+                    <div class="consultation-card">
+                        <h3>Family Consultation</h3>
+                        <div class="consultation-duration">120 minutes</div>
+                        <p>Comprehensive wellness planning for the entire family</p>
+                        <ul>
+                            <li>Multiple family member assessments</li>
+                            <li>Family health planning</li>
+                            <li>Preventive care strategies</li>
+                            <li>Lifestyle optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Booking Form --}}
+            <section class="booking-section">
+                <h2>Schedule Your Appointment</h2>
+                {{> "appointment-form"}}
+            </section>
+
+            {{!-- Preparation Guidelines --}}
+            <section class="preparation-guidelines">
+                <h2>Preparing for Your Visit</h2>
+                <div class="guidelines-content">
+                    <div class="guideline-section">
+                        <h3>What to Bring</h3>
+                        <ul>
+                            <li>Previous medical records and test results</li>
+                            <li>List of current medications and supplements</li>
+                            <li>Insurance information and identification</li>
+                            <li>Completed intake forms (sent via email)</li>
+                        </ul>
+                    </div>
+                    <div class="guideline-section">
+                        <h3>Before Your Appointment</h3>
+                        <ul>
+                            <li>Complete the health questionnaire we'll email you</li>
+                            <li>Prepare a list of your main health concerns</li>
+                            <li>Note any questions you'd like to discuss</li>
+                            <li>Arrive 15 minutes early for check-in</li>
+                        </ul>
+                    </div>
+                    <div class="guideline-section">
+                        <h3>What to Expect</h3>
+                        <ul>
+                            <li>Detailed discussion of your health history</li>
+                            <li>Physical examination if needed</li>
+                            <li>Personalized treatment plan development</li>
+                            <li>Education about your condition and treatment</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Location & Contact --}}
+            <section class="location-contact">
+                <div class="location-grid">
+                    <div class="contact-info">
+                        <h2>Visit Our Clinic</h2>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <h3>📍 Address</h3>
+                                <p>
+                                    MMHC - Alternative Medicine & Holistic Healthcare Clinic<br>
+                                    123 Wellness Boulevard<br>
+                                    Health District, City 12345
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📞 Phone</h3>
+                                <p>
+                                    Main: +1 (555) 123-4567<br>
+                                    Emergency: +1 (555) 123-4568
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>📧 Email</h3>
+                                <p>
+                                    appointments@mmhc.com<br>
+                                    info@mmhc.com
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <h3>🕒 Hours</h3>
+                                <p>
+                                    Monday - Friday: 9:00 AM - 6:00 PM<br>
+                                    Saturday: 9:00 AM - 2:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-container">
+                        <h2>Find Us</h2>
+                        <div class="map-embed">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.123456789!2d-74.0059413!3d40.7127753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ2LjAiTiA3NMKwMDAnMjEuNCJX!5e0!3m2!1sen!2sus!4v1234567890123"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="MMHC Location Map">
+                            </iframe>
+                        </div>
+                        <div class="directions-info">
+                            <h4>Getting Here</h4>
+                            <p>
+                                <strong>By Car:</strong> Free parking available in our clinic lot<br>
+                                <strong>By Public Transit:</strong> Bus routes 15, 23, and 45 stop nearby<br>
+                                <strong>Accessibility:</strong> Wheelchair accessible entrance and facilities
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Insurance & Payment --}}
+            <section class="insurance-payment">
+                <h2>Insurance & Payment Information</h2>
+                <div class="payment-grid">
+                    <div class="insurance-info">
+                        <h3>Insurance Coverage</h3>
+                        <p>
+                            We work with most major insurance providers. Please contact us to verify 
+                            your coverage for holistic healthcare services.
+                        </p>
+                        <ul>
+                            <li>Most major health insurance plans accepted</li>
+                            <li>HSA and FSA accounts welcome</li>
+                            <li>Insurance verification available</li>
+                            <li>Pre-authorization assistance provided</li>
+                        </ul>
+                    </div>
+                    <div class="payment-options">
+                        <h3>Payment Options</h3>
+                        <p>
+                            We offer flexible payment options to make holistic healthcare accessible 
+                            to all families.
+                        </p>
+                        <ul>
+                            <li>Cash, check, and all major credit cards</li>
+                            <li>Payment plans available</li>
+                            <li>Family package discounts</li>
+                            <li>Senior citizen discounts</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Emergency Contact --}}
+            <section class="emergency-info">
+                <div class="emergency-card">
+                    <h2>🚨 Emergency Situations</h2>
+                    <p>
+                        For medical emergencies, please call 911 or go to your nearest emergency room. 
+                        For urgent but non-emergency health concerns outside of business hours, 
+                        you can reach our on-call practitioner at:
+                    </p>
+                    <div class="emergency-contact">
+                        <strong>Emergency Line: +1 (555) 123-4568</strong>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- FAQ --}}
+            <section class="appointment-faq">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How far in advance should I book?</h3>
+                        <p>We recommend booking 1-2 weeks in advance for initial consultations, though we often have same-week availability.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What if I need to cancel or reschedule?</h3>
+                        <p>Please give us at least 24 hours notice for cancellations or rescheduling to avoid any fees.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer virtual consultations?</h3>
+                        <p>Yes, we offer telemedicine appointments for follow-up visits and certain types of consultations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Can I bring my child to the appointment?</h3>
+                        <p>Absolutely! We welcome children and have a family-friendly environment. We also offer specialized pediatric consultations.</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </article>
+</main>

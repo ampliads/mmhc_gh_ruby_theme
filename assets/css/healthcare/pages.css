@@ -1,0 +1,746 @@
+/* MMHC Healthcare Pages Styles */
+
+/* Common Page Styles */
+.about-page,
+.treatments-page,
+.child-wellness-page,
+.women-wellness-page,
+.therapies-page,
+.team-page,
+.culture-page,
+.appointment-page {
+    margin-top: var(--header-spacing);
+}
+
+/* About Us Page */
+.mission-vision-section {
+    margin: 4rem 0;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.mission-card,
+.vision-card {
+    background: var(--light-gray-color);
+    padding: 3rem;
+    border-radius: 12px;
+}
+
+.mission-card h2,
+.vision-card h2 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.philosophy-detailed {
+    margin: 4rem 0;
+}
+
+.philosophy-principles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.principle {
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.principle h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+}
+
+.founder-section {
+    margin: 4rem 0;
+    background: var(--light-gray-color);
+    padding: 4rem;
+    border-radius: 12px;
+}
+
+.founder-quote-card {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.founder-quote-card blockquote {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--ghost-accent-color);
+    margin-bottom: 2rem;
+}
+
+.founder-info h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.founder-title {
+    color: var(--ghost-accent-color);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.values-section {
+    margin: 4rem 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.value-item {
+    text-align: center;
+    padding: 2rem;
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-cta {
+    margin: 4rem 0;
+}
+
+.cta-card {
+    background: var(--ghost-accent-color);
+    color: white;
+    padding: 4rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.cta-card h2 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+/* Treatments Pages */
+.treatment-nav-section {
+    margin: 4rem 0;
+}
+
+.treatment-nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.treatment-nav-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.treatment-nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.nav-card-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.treatment-nav-card h3 {
+    color: var(--primary-text-color);
+    margin-bottom: 1rem;
+}
+
+.nav-arrow {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: var(--ghost-accent-color);
+}
+
+.treatment-philosophy,
+.approach-steps {
+    margin: 4rem 0;
+}
+
+.approach-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.step {
+    text-align: center;
+    padding: 2rem;
+}
+
+.step-number {
+    background: var(--ghost-accent-color);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto 1.5rem;
+}
+
+.specialty-areas,
+.modalities-overview {
+    margin: 4rem 0;
+}
+
+.specialty-grid,
+.modalities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.specialty-card,
+.modality-item {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.specialty-card h3,
+.modality-item h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+}
+
+.specialty-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.specialty-card li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.specialty-card li:before {
+    content: "•";
+    color: var(--ghost-accent-color);
+    position: absolute;
+    left: 0;
+}
+
+.modality-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Service Cards */
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin: 3rem 0;
+}
+
+.treatment-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    background: var(--light-gray-color);
+    padding: 2rem;
+    text-align: center;
+}
+
+.treatment-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.treatment-title {
+    color: var(--primary-text-color);
+    margin-bottom: 0;
+}
+
+.card-content {
+    padding: 2rem;
+}
+
+.treatment-description {
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.treatment-section {
+    margin-bottom: 2rem;
+}
+
+.treatment-section h4 {
+    color: var(--ghost-accent-color);
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.conditions-list,
+.approach-description {
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+}
+
+.treatment-features {
+    list-style: none;
+    padding: 0;
+}
+
+.treatment-features li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+.treatment-features li:before {
+    content: "✓";
+    color: var(--ghost-accent-color);
+    position: absolute;
+    left: 0;
+}
+
+.card-footer {
+    padding: 0 2rem 2rem;
+}
+
+.treatment-link {
+    color: var(--ghost-accent-color);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* Child Wellness Specific */
+.child-wellness-intro,
+.women-wellness-intro,
+.therapies-intro {
+    margin: 3rem 0;
+}
+
+.intro-text {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: var(--secondary-text-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.icdp-program {
+    margin: 4rem 0;
+    background: var(--light-gray-color);
+    padding: 4rem;
+    border-radius: 12px;
+}
+
+.program-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.program-subtitle {
+    color: var(--ghost-accent-color);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.program-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.program-features {
+    list-style: none;
+    padding: 0;
+}
+
+.program-features li {
+    padding: 0.8rem 0;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.program-features li:before {
+    content: "→";
+    color: var(--ghost-accent-color);
+    position: absolute;
+    left: 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-item h4 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.age-specific-care {
+    margin: 4rem 0;
+}
+
+.age-groups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.age-group {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.age-group h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+}
+
+.age-group ul {
+    list-style: none;
+    padding: 0;
+}
+
+.age-group li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+.age-group li:before {
+    content: "•";
+    color: var(--ghost-accent-color);
+    position: absolute;
+    left: 0;
+}
+
+/* Women Wellness Specific */
+.life-stage-care {
+    margin: 4rem 0;
+}
+
+.life-stages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.stage-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.stage-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.stage-card h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 2rem;
+}
+
+.specialized-programs {
+    margin: 4rem 0;
+}
+
+.program-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.program-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.program-card h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1.5rem;
+}
+
+.program-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.program-features span {
+    background: var(--light-gray-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--ghost-accent-color);
+}
+
+/* Therapies Specific */
+.main-therapies {
+    margin: 4rem 0;
+}
+
+.therapy-cards {
+    display: grid;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+
+.therapy-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.therapy-header {
+    background: var(--light-gray-color);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.therapy-icon {
+    font-size: 3rem;
+}
+
+.therapy-header h3 {
+    color: var(--primary-text-color);
+    margin: 0;
+}
+
+.therapy-content {
+    padding: 3rem;
+}
+
+.therapy-description {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--secondary-text-color);
+    margin-bottom: 2rem;
+}
+
+.therapy-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.therapy-details h4 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+}
+
+.therapy-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.therapy-details li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+    color: var(--secondary-text-color);
+}
+
+.therapy-details li:before {
+    content: "•";
+    color: var(--ghost-accent-color);
+    position: absolute;
+    left: 0;
+}
+
+.integrative-approach {
+    margin: 4rem 0;
+    background: var(--light-gray-color);
+    padding: 4rem;
+    border-radius: 12px;
+}
+
+.integration-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.example-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.example-card h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+}
+
+/* Success Stories */
+.success-story,
+.success-stories {
+    margin: 4rem 0;
+}
+
+.story-card {
+    background: var(--light-gray-color);
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.story-card blockquote {
+    font-size: 1.6rem;
+    font-style: italic;
+    color: var(--secondary-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.story-card cite {
+    color: var(--ghost-accent-color);
+    font-weight: 600;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+/* Resources */
+.parent-resources,
+.self-care-resources {
+    margin: 4rem 0;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.resource-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.resource-item h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-vision-grid,
+    .program-content,
+    .therapy-details,
+    .life-stages {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .philosophy-principles,
+    .values-grid,
+    .specialty-grid,
+    .modalities-grid,
+    .age-groups,
+    .program-cards,
+    .integration-examples,
+    .stories-grid,
+    .resources-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .service-cards,
+    .treatment-nav-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .cta-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .approach-steps {
+        grid-template-columns: 1fr;
+    }
+}

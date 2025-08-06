@@ -1,0 +1,58 @@
+{{!-- Doctor Profile Partial for MMHC Team Page --}}
+<div class="doctor-profile">
+    <div class="doctor-card">
+        <div class="doctor-image-container">
+            <img src="{{image}}" alt="{{name}}" class="doctor-image" loading="lazy">
+        </div>
+        
+        <div class="doctor-info">
+            <div class="doctor-header">
+                <h3 class="doctor-name">{{name}}</h3>
+                <p class="doctor-title">{{title}}</p>
+            </div>
+            
+            <div class="doctor-details">
+                {{#if specialties}}
+                <div class="detail-section">
+                    <h4>Specialties:</h4>
+                    <p>{{specialties}}</p>
+                </div>
+                {{/if}}
+                
+                {{#if experience}}
+                <div class="detail-section">
+                    <h4>Experience:</h4>
+                    <p>{{experience}}</p>
+                </div>
+                {{/if}}
+                
+                {{#if education}}
+                <div class="detail-section">
+                    <h4>Education:</h4>
+                    <p>{{education}}</p>
+                </div>
+                {{/if}}
+                
+                {{#if philosophy}}
+                <div class="detail-section philosophy">
+                    <h4>Philosophy:</h4>
+                    <blockquote>"{{philosophy}}"</blockquote>
+                </div>
+                {{/if}}
+            </div>
+            
+            {{#if description}}
+            <div class="doctor-description">
+                <p>{{description}}</p>
+            </div>
+            {{/if}}
+            
+            {{#if achievements}}
+            <div class="doctor-achievements">
+                <h4>Key Achievements:</h4>
+                <p>{{achievements}}</p>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>

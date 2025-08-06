@@ -1,0 +1,30 @@
+{{!-- Healthcare Navigation Partial for MMHC --}}
+<nav class="healthcare-navigation">
+    <div class="nav-container">
+        <div class="nav-primary">
+            <a href="/" class="nav-item {{#is "home"}}active{{/is}}">Home</a>
+            <a href="/about-us/" class="nav-item {{#is "page" slug="about-us"}}active{{/is}}">About Us</a>
+            
+            <div class="nav-dropdown">
+                <a href="/treatments/" class="nav-item dropdown-toggle {{#is "page" slug="treatments,child-wellness,women-wellness,therapies"}}active{{/is}}">
+                    Treatments <span class="dropdown-arrow">▼</span>
+                </a>
+                <div class="dropdown-menu">
+                    <a href="/treatments/" class="dropdown-item">All Treatments</a>
+                    <a href="/child-wellness/" class="dropdown-item">Child Wellness</a>
+                    <a href="/women-wellness/" class="dropdown-item">Women Wellness</a>
+                    <a href="/therapies/" class="dropdown-item">Therapeutic Modalities</a>
+                </div>
+            </div>
+            
+            <a href="/team/" class="nav-item {{#is "page" slug="team"}}active{{/is}}">Our Team</a>
+            <a href="/culture/" class="nav-item {{#is "page" slug="culture"}}active{{/is}}">Culture</a>
+            <a href="/appointment/" class="nav-item {{#is "page" slug="appointment"}}active{{/is}}">Book Appointment</a>
+        </div>
+        
+        <div class="nav-secondary">
+            <a href="tel:+15551234567" class="nav-contact">📞 (555) 123-4567</a>
+            <a href="/appointment/" class="nav-cta gh-btn gh-primary-btn">Book Now</a>
+        </div>
+    </div>
+</nav>

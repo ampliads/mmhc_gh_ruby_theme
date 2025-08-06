@@ -1,0 +1,224 @@
+{{!< default}}
+
+{{!-- MMHC Team Page --}}
+<main class="site-main">
+    <article class="gh-article team-page">
+        
+        <header class="gh-article-header gh-canvas">
+            <h1 class="gh-article-title">Meet Our Team</h1>
+            <p class="gh-article-excerpt">
+                Dedicated healthcare professionals committed to your family's wellness journey
+            </p>
+        </header>
+
+        <div class="gh-content gh-canvas">
+            
+            {{!-- Introduction --}}
+            <section class="team-intro">
+                <p class="intro-text">
+                    Our team of experienced practitioners brings together diverse expertise in holistic healthcare, 
+                    united by a shared commitment to healing and compassionate care. Each member of our team is 
+                    dedicated to providing personalized, evidence-based treatments that honor both traditional 
+                    wisdom and modern medical understanding.
+                </p>
+            </section>
+
+            {{!-- Leadership Section --}}
+            <section class="leadership-section">
+                <h2>Leadership</h2>
+                
+                {{> "doctor-profile" 
+                    name="Mukesh"
+                    title="Founder & Visionary"
+                    image="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    specialties="Integrative Medicine, Holistic Healthcare Strategy, Patient Care Excellence"
+                    experience="20+ years"
+                    education="Advanced certifications in multiple healing modalities"
+                    philosophy="Healing from the Root, Caring with Heart"
+                    description="Mukesh founded MMHC with a vision to bridge traditional healing wisdom with modern healthcare needs. His compassionate approach and deep understanding of integrative medicine have guided thousands of families on their journey to optimal health. Under his leadership, MMHC has become a beacon of hope for those seeking natural, effective healthcare solutions."
+                    achievements="Founded MMHC, Developed ICDP programs, Mentored numerous practitioners, Published research on integrative pediatric care"
+                }}
+            </section>
+
+            {{!-- Medical Team --}}
+            <section class="medical-team">
+                <h2>Our Medical Practitioners</h2>
+                <div class="doctors-grid">
+                    
+                    {{> "doctor-profile" 
+                        name="Dr. Pratiksha"
+                        title="Senior Homeopathic Physician"
+                        image="https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        specialties="Classical Homeopathy, Women's Health, Chronic Disease Management"
+                        experience="15+ years"
+                        education="BHMS, MD (Homeopathy), Advanced Clinical Training"
+                        description="Dr. Pratiksha specializes in classical homeopathy with a particular focus on women's health and chronic conditions. Her gentle approach and deep understanding of constitutional medicine have helped countless patients achieve lasting health improvements."
+                    }}
+
+                    {{> "doctor-profile" 
+                        name="Dr. Parul"
+                        title="Pediatric Specialist & Naturopath"
+                        image="https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        specialties="Pediatric Care, Child Development, Nutritional Medicine"
+                        experience="12+ years"
+                        education="BNYS, Pediatric Naturopathy Certification, Child Psychology"
+                        description="Dr. Parul combines naturopathic principles with specialized pediatric care to support children's optimal growth and development. Her expertise in the ICDP program has transformed the lives of numerous young patients."
+                    }}
+
+                    {{> "doctor-profile" 
+                        name="Dr. Dhara"
+                        title="Ayurvedic Physician & Herbalist"
+                        image="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        specialties="Ayurvedic Medicine, Herbal Formulations, Panchakarma"
+                        experience="14+ years"
+                        education="BAMS, MD (Ayurveda), Advanced Panchakarma Training"
+                        description="Dr. Dhara brings the ancient wisdom of Ayurveda to modern healthcare challenges. Her expertise in constitutional assessment and personalized herbal formulations provides patients with time-tested healing solutions."
+                    }}
+
+                    {{> "doctor-profile" 
+                        name="Dr. Bhoomi"
+                        title="Acupuncturist & Pain Management Specialist"
+                        image="https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        specialties="Traditional Acupuncture, Pain Management, Stress Relief"
+                        experience="10+ years"
+                        education="Licensed Acupuncturist, Traditional Chinese Medicine Diploma"
+                        description="Dr. Bhoomi specializes in traditional acupuncture and pain management. Her precise needle techniques and deep understanding of meridian therapy provide effective relief for both acute and chronic conditions."
+                    }}
+
+                    {{> "doctor-profile" 
+                        name="Dr. Mauli"
+                        title="Homeopathic Physician & Allergy Specialist"
+                        image="https://images.pexels.com/photos/5327653/pexels-photo-5327653.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        specialties="Allergy Treatment, Immune System Support, Respiratory Health"
+                        experience="11+ years"
+                        education="BHMS, Specialized Training in Allergy Management"
+                        description="Dr. Mauli focuses on allergy treatment and immune system strengthening through homeopathic medicine. Her approach has helped many patients overcome chronic allergies and respiratory conditions naturally."
+                    }}
+
+                    {{> "doctor-profile" 
+                        name="Dr. Neha"
+                        title="Naturopathic Physician & Wellness Coach"
+                        image="https://images.pexels.com/photos/5327919/pexels-photo-5327919.jpeg?auto=compress&cs=tinysrgb&w=400"
+                        specialties="Lifestyle Medicine, Detoxification, Metabolic Health"
+                        experience="9+ years"
+                        education="BNYS, Certified Wellness Coach, Advanced Nutrition Training"
+                        description="Dr. Neha combines naturopathic medicine with wellness coaching to help patients achieve sustainable health transformations. Her holistic approach addresses both physical symptoms and lifestyle factors."
+                    }}
+
+                </div>
+            </section>
+
+            {{!-- Team Philosophy --}}
+            <section class="team-philosophy">
+                <h2>Our Collective Approach</h2>
+                <div class="philosophy-content">
+                    <p>
+                        What sets our team apart is our collaborative approach to patient care. Each practitioner 
+                        brings unique expertise, and we work together to create comprehensive treatment plans that 
+                        address all aspects of health and wellness.
+                    </p>
+                    
+                    <div class="team-values">
+                        <div class="value-item">
+                            <h3>Collaborative Care</h3>
+                            <p>Our practitioners work together, sharing insights and expertise to provide the most comprehensive care possible.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>Continuous Learning</h3>
+                            <p>We stay current with the latest developments in both traditional and modern healing approaches.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>Patient-Centered Focus</h3>
+                            <p>Every decision we make is guided by what's best for our patients' health and wellbeing.</p>
+                        </div>
+                        <div class="value-item">
+                            <h3>Compassionate Care</h3>
+                            <p>We treat each patient with the same care and attention we would want for our own family members.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Qualifications & Certifications --}}
+            <section class="qualifications-section">
+                <h2>Qualifications & Certifications</h2>
+                <div class="qualifications-grid">
+                    <div class="qual-category">
+                        <h3>Medical Degrees</h3>
+                        <ul>
+                            <li>BHMS (Bachelor of Homeopathic Medicine & Surgery)</li>
+                            <li>MD (Doctor of Medicine - Homeopathy)</li>
+                            <li>BAMS (Bachelor of Ayurvedic Medicine & Surgery)</li>
+                            <li>BNYS (Bachelor of Naturopathy & Yogic Sciences)</li>
+                        </ul>
+                    </div>
+                    <div class="qual-category">
+                        <h3>Specialized Certifications</h3>
+                        <ul>
+                            <li>Licensed Acupuncturist</li>
+                            <li>Certified Wellness Coach</li>
+                            <li>Pediatric Naturopathy Specialist</li>
+                            <li>Advanced Panchakarma Practitioner</li>
+                        </ul>
+                    </div>
+                    <div class="qual-category">
+                        <h3>Professional Memberships</h3>
+                        <ul>
+                            <li>National Board of Homeopathy</li>
+                            <li>Ayurvedic Medical Association</li>
+                            <li>International Naturopathic Society</li>
+                            <li>Acupuncture Council</li>
+                        </ul>
+                    </div>
+                    <div class="qual-category">
+                        <h3>Continuing Education</h3>
+                        <ul>
+                            <li>Regular advanced training programs</li>
+                            <li>International conferences and workshops</li>
+                            <li>Research participation and publication</li>
+                            <li>Peer collaboration and case studies</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Patient Testimonials about Team --}}
+            <section class="team-testimonials">
+                <h2>What Our Patients Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <blockquote>
+                            <p>"The entire team at MMHC works together seamlessly. I felt like every practitioner knew my case and was invested in my healing journey. This collaborative approach made all the difference."</p>
+                            <cite>— Patient Family</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>
+                            <p>"Dr. Pratiksha's gentle approach combined with the team's comprehensive care plan helped me overcome chronic health issues I'd struggled with for years. I'm grateful for their dedication."</p>
+                            <cite>— Long-term Patient</cite>
+                        </blockquote>
+                    </div>
+                    <div class="testimonial-card">
+                        <blockquote>
+                            <p>"The pediatric care my daughter received from Dr. Parul and the team was exceptional. They treated not just her symptoms but supported her overall development and wellbeing."</p>
+                            <cite>— Parent</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Call to Action --}}
+            <section class="team-cta">
+                <div class="cta-card">
+                    <h2>Experience Our Team's Expertise</h2>
+                    <p>Schedule a consultation to meet our practitioners and discover how our collaborative approach can benefit your health</p>
+                    <div class="cta-actions">
+                        <a href="/appointment/" class="gh-btn gh-primary-btn">Schedule Consultation</a>
+                        <a href="/treatments/" class="gh-btn gh-outline-btn">Explore Our Treatments</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </article>
+</main>

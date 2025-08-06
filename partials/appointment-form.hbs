@@ -1,0 +1,210 @@
+{{!-- Appointment Booking Form Partial for MMHC --}}
+<div class="appointment-form-container">
+    <form class="appointment-form" action="#" method="post">
+        <div class="form-section">
+            <h3>Personal Information</h3>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dateOfBirth">Date of Birth</label>
+                    <input type="date" id="dateOfBirth" name="dateOfBirth">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="">Select gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                        <option value="prefer-not-to-say">Prefer not to say</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Appointment Details</h3>
+            
+            <div class="form-group">
+                <label for="appointmentType">Consultation Type *</label>
+                <select id="appointmentType" name="appointmentType" required>
+                    <option value="">Select consultation type</option>
+                    <option value="initial">Initial Consultation (90 min)</option>
+                    <option value="followup">Follow-up Consultation (45 min)</option>
+                    <option value="family">Family Consultation (120 min)</option>
+                    <option value="child-wellness">Child Wellness Consultation</option>
+                    <option value="women-wellness">Women's Wellness Consultation</option>
+                </select>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="preferredDate">Preferred Date *</label>
+                    <input type="date" id="preferredDate" name="preferredDate" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferredTime">Preferred Time *</label>
+                    <select id="preferredTime" name="preferredTime" required>
+                        <option value="">Select time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="practitionerPreference">Practitioner Preference</label>
+                <select id="practitionerPreference" name="practitionerPreference">
+                    <option value="">No preference</option>
+                    <option value="mukesh">Mukesh (Founder)</option>
+                    <option value="dr-pratiksha">Dr. Pratiksha (Homeopathy)</option>
+                    <option value="dr-parul">Dr. Parul (Pediatric Specialist)</option>
+                    <option value="dr-dhara">Dr. Dhara (Ayurveda)</option>
+                    <option value="dr-bhoomi">Dr. Bhoomi (Acupuncture)</option>
+                    <option value="dr-mauli">Dr. Mauli (Allergy Specialist)</option>
+                    <option value="dr-neha">Dr. Neha (Naturopathy)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Health Information</h3>
+            
+            <div class="form-group">
+                <label for="chiefConcern">Primary Health Concern *</label>
+                <textarea id="chiefConcern" name="chiefConcern" rows="3" required placeholder="Please describe your main health concern or reason for seeking treatment"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="currentMedications">Current Medications/Supplements</label>
+                <textarea id="currentMedications" name="currentMedications" rows="2" placeholder="List any medications, supplements, or remedies you're currently taking"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="previousTreatment">Previous Treatment History</label>
+                <textarea id="previousTreatment" name="previousTreatment" rows="2" placeholder="Have you tried any treatments for this condition before?"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="allergies">Known Allergies</label>
+                <input type="text" id="allergies" name="allergies" placeholder="Food, environmental, or medication allergies">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Additional Information</h3>
+            
+            <div class="form-group">
+                <label for="howDidYouHear">How did you hear about MMHC?</label>
+                <select id="howDidYouHear" name="howDidYouHear">
+                    <option value="">Select option</option>
+                    <option value="google">Google Search</option>
+                    <option value="referral">Friend/Family Referral</option>
+                    <option value="doctor-referral">Doctor Referral</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="website">Website</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="specialRequests">Special Requests or Questions</label>
+                <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special accommodations needed or questions you'd like to discuss?"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="emergencyContact">Emergency Contact</label>
+                <input type="text" id="emergencyContact" name="emergencyContact" placeholder="Name and phone number">
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h3>Insurance & Payment</h3>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="insuranceProvider">Insurance Provider</label>
+                    <input type="text" id="insuranceProvider" name="insuranceProvider" placeholder="Insurance company name">
+                </div>
+                <div class="form-group">
+                    <label for="policyNumber">Policy Number</label>
+                    <input type="text" id="policyNumber" name="policyNumber" placeholder="Insurance policy number">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="paymentMethod">Preferred Payment Method</label>
+                <select id="paymentMethod" name="paymentMethod">
+                    <option value="">Select payment method</option>
+                    <option value="insurance">Insurance</option>
+                    <option value="cash">Cash</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="hsa-fsa">HSA/FSA</option>
+                    <option value="payment-plan">Payment Plan</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-section consent-section">
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="treatmentConsent" required>
+                    <span class="checkmark"></span>
+                    I consent to receive holistic healthcare treatment at MMHC *
+                </label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="privacyConsent" required>
+                    <span class="checkmark"></span>
+                    I agree to MMHC's privacy policy and consent to the use of my health information for treatment purposes *
+                </label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="communicationConsent">
+                    <span class="checkmark"></span>
+                    I would like to receive health tips and updates from MMHC via email
+                </label>
+            </div>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="gh-btn gh-primary-btn submit-btn">Book Appointment</button>
+            <p class="form-note">
+                * Required fields. We'll contact you within 24 hours to confirm your appointment.
+            </p>
+        </div>
+    </form>
+</div>

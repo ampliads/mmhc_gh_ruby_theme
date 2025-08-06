@@ -1,0 +1,442 @@
+/* MMHC Culture Page Styles */
+
+.culture-page {
+    margin-top: var(--header-spacing);
+}
+
+.culture-intro {
+    margin: 3rem 0;
+}
+
+.intro-text {
+    font-size: 1.7rem;
+    line-height: 1.7;
+    color: var(--secondary-text-color);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Core Values */
+.core-values {
+    margin: 4rem 0;
+}
+
+.core-values h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-text-color);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.value-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.value-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.value-card h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.value-card p {
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+}
+
+/* Work Environment */
+.work-environment {
+    margin: 4rem 0;
+    background: var(--light-gray-color);
+    padding: 4rem;
+    border-radius: 12px;
+}
+
+.environment-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.environment-text {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.environment-text p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: var(--secondary-text-color);
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.feature-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item h3 {
+    color: var(--ghost-accent-color);
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.feature-item p {
+    color: var(--secondary-text-color);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Patient Testimonials */
+.patient-testimonials {
+    margin: 4rem 0;
+}
+
+.patient-testimonials h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--primary-text-color);
+}
+
+.testimonials-intro {
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--secondary-text-color);
+    margin-bottom: 3rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-content {
+    padding: 3rem;
+}
+
+.testimonial-content blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--secondary-text-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    border-left: 4px solid var(--ghost-accent-color);
+    padding-left: 2rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-info h4 {
+    color: var(--primary-text-color);
+    margin-bottom: 0.3rem;
+    font-size: 1.4rem;
+}
+
+.author-info p {
+    color: var(--ghost-accent-color);
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: 600;
+}
+
+/* Career Section */
+.career-section {
+    margin: 4rem 0;
+    background: var(--ghost-accent-color);
+    color: white;
+    padding: 4rem;
+    border-radius: 12px;
+}
+
+.career-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.career-section h2 {
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.career-content p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    opacity: 0.9;
+}
+
+.career-benefits h3 {
+    color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.benefit-item h4 {
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.benefit-item p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Application Section */
+.application-section {
+    margin: 4rem 0;
+}
+
+.application-section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--primary-text-color);
+}
+
+.application-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 4rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.application-form {
+    display: grid;
+    gap: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.form-group label {
+    color: var(--primary-text-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 1rem;
+    border: 2px solid var(--light-gray-color);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--ghost-accent-color);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group small {
+    color: var(--secondary-text-color);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.checkbox-group {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin: 0;
+    width: auto;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--light-gray-color);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark {
+    background-color: var(--ghost-accent-color);
+    border-color: var(--ghost-accent-color);
+}
+
+.checkbox-label input[type="checkbox"]:checked + .checkmark:after {
+    content: "✓";
+    color: white;
+    font-size: 12px;
+}
+
+.submit-btn {
+    padding: 1.2rem 3rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    justify-self: center;
+}
+
+/* Career Contact */
+.career-contact {
+    margin: 4rem 0;
+}
+
+.contact-card {
+    background: var(--light-gray-color);
+    padding: 3rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-card h2 {
+    color: var(--primary-text-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-card p {
+    color: var(--secondary-text-color);
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .values-grid,
+    .feature-grid,
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .application-form-container {
+        padding: 2rem;
+    }
+    
+    .work-environment,
+    .career-section {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .value-card,
+    .testimonial-content {
+        padding: 2rem;
+    }
+    
+    .testimonial-content blockquote {
+        font-size: 1.4rem;
+    }
+    
+    .application-form-container {
+        padding: 1.5rem;
+    }
+}

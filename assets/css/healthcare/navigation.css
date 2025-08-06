@@ -1,0 +1,189 @@
+/* MMHC Healthcare Navigation Styles */
+
+.healthcare-navigation {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--gap);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.nav-primary {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-item {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-item:hover,
+.nav-item.active {
+    color: var(--ghost-accent-color);
+}
+
+.nav-item.active:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--ghost-accent-color);
+}
+
+/* Dropdown */
+.nav-dropdown {
+    position: relative;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dropdown-arrow {
+    font-size: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 250px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-item {
+    display: block;
+    padding: 1rem 2rem;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: var(--light-gray-color);
+    color: var(--ghost-accent-color);
+}
+
+/* Secondary Navigation */
+.nav-secondary {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-contact {
+    color: var(--ghost-accent-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.nav-contact:hover {
+    opacity: 0.8;
+}
+
+.nav-cta {
+    font-size: 1.3rem;
+    padding: 0.8rem 2rem;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem var(--gap);
+    }
+    
+    .nav-primary {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .nav-item {
+        font-size: 1.3rem;
+    }
+    
+    .nav-secondary {
+        gap: 1rem;
+    }
+    
+    .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        background: var(--light-gray-color);
+        margin-top: 1rem;
+        border-radius: 4px;
+    }
+    
+    .nav-dropdown:hover .dropdown-arrow {
+        transform: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-primary {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .nav-secondary {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .nav-contact {
+        font-size: 1.2rem;
+    }
+    
+    .nav-cta {
+        font-size: 1.2rem;
+        padding: 0.7rem 1.5rem;
+    }
+}

@@ -1,13 +1,96 @@
 {{!< default}}
 
+{{!-- MMHC Homepage - Alternative Medicine & Holistic Healthcare Clinic --}}
 <div class="gh-outer">
 <main class="site-main gh-inner">
 
-    <div class="post-feed gh-feed">
-        {{#foreach posts}}
-            {{> "loop"}}
-        {{/foreach}}
-    </div>
+    {{!-- Hero Section --}}
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to MMHC</h1>
+            <p class="hero-subtitle">Pioneers in Holistic Child & Women Wellness</p>
+            <p class="hero-description">
+                Integrating traditional wisdom with modern medicine to provide comprehensive healthcare solutions for your family's wellbeing.
+            </p>
+            <div class="hero-actions">
+                <a href="/treatments/" class="gh-btn gh-primary-btn">Explore Treatments</a>
+                <a href="/team/" class="gh-btn gh-outline-btn">Meet Our Team</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Holistic Healthcare" loading="lazy">
+        </div>
+    </section>
+
+    {{!-- Philosophy Section --}}
+    <section class="philosophy-section">
+        <div class="section-container">
+            <div class="philosophy-content">
+                <h2 class="section-title">Our Integrative Medicine Approach</h2>
+                <p class="philosophy-text">
+                    At MMHC, we believe in treating the whole person, not just symptoms. Our integrative approach combines the best of conventional medicine with time-tested alternative therapies, creating personalized treatment plans that address the root causes of health concerns.
+                </p>
+                <div class="philosophy-pillars">
+                    <div class="pillar">
+                        <div class="pillar-icon">🌱</div>
+                        <h3>Natural Healing</h3>
+                        <p>Harnessing the body's innate ability to heal itself through natural therapies</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">👨‍👩‍👧‍👦</div>
+                        <h3>Family-Centered Care</h3>
+                        <p>Comprehensive wellness solutions for children and women at every life stage</p>
+                    </div>
+                    <div class="pillar">
+                        <div class="pillar-icon">🔬</div>
+                        <h3>Evidence-Based</h3>
+                        <p>Combining traditional wisdom with modern scientific research and validation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{!-- Service Showcase --}}
+    {{> "service-showcase"}}
+
+    {{!-- Founder Quote Section --}}
+    <section class="founder-quote-section">
+        <div class="section-container">
+            <blockquote class="founder-quote">
+                <p>"Healing from the Root, Caring with Heart"</p>
+                <cite>— Mukesh, Founder, MMHC</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    {{!-- Call to Action Section --}}
+    <section class="cta-section">
+        <div class="section-container">
+            <div class="cta-content">
+                <h2>Ready to Begin Your Healing Journey?</h2>
+                <p>Take the first step towards holistic wellness for you and your family</p>
+                <a href="/appointment/" class="gh-btn gh-primary-btn cta-btn">Book Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    {{!-- Recent Blog Posts --}}
+    {{#if posts}}
+    <section class="recent-posts-section">
+        <div class="section-container">
+            <h2 class="section-title">Latest Health Insights</h2>
+            <div class="post-feed gh-feed">
+                {{#foreach posts limit="6"}}
+                    {{> "loop"}}
+                {{/foreach}}
+            </div>
+            <div class="view-all-posts">
+                <a href="/blog/" class="gh-btn gh-outline-btn">View All Articles</a>
+            </div>
+        </div>
+    </section>
+    {{/if}}
 
 </main>
 </div>

@@ -1,0 +1,213 @@
+{{!< default}}
+
+{{!-- MMHC Child Wellness Page --}}
+<main class="site-main">
+    <article class="gh-article child-wellness-page">
+        
+        <header class="gh-article-header gh-canvas">
+            <h1 class="gh-article-title">Child Wellness</h1>
+            <p class="gh-article-excerpt">
+                Nurturing healthy growth and development through holistic pediatric care
+            </p>
+        </header>
+
+        <div class="gh-content gh-canvas">
+            
+            {{!-- Introduction --}}
+            <section class="child-wellness-intro">
+                <p class="intro-text">
+                    Every child deserves the best start in life. Our child wellness programs combine gentle, 
+                    natural therapies with evidence-based care to support your child's optimal growth, 
+                    development, and wellbeing at every stage.
+                </p>
+            </section>
+
+            {{!-- Service Areas --}}
+            <section class="child-services">
+                <h2>Our Child Wellness Services</h2>
+                
+                <div class="service-cards">
+                    {{> "treatment-card" 
+                        title="Respiratory Health" 
+                        icon="🫁"
+                        description="Natural solutions for breathing difficulties, asthma, and respiratory conditions"
+                        conditions="Asthma, Chronic cough, Bronchitis, Sinusitis, Allergic rhinitis"
+                        approach="Gentle homeopathic remedies, breathing exercises, dietary modifications, and environmental optimization"
+                    }}
+
+                    {{> "treatment-card" 
+                        title="Nutrition & Growth" 
+                        icon="🥗"
+                        description="Comprehensive nutritional support for healthy growth and development"
+                        conditions="Growth delays, Nutritional deficiencies, Picky eating, Digestive issues"
+                        approach="Personalized nutrition plans, digestive support, appetite enhancement, and growth monitoring"
+                    }}
+
+                    {{> "treatment-card" 
+                        title="Obesity Management" 
+                        icon="⚖️"
+                        description="Holistic approach to healthy weight management in children"
+                        conditions="Childhood obesity, Metabolic issues, Emotional eating, Low energy"
+                        approach="Lifestyle counseling, metabolic support, family-centered approach, and sustainable habit formation"
+                    }}
+
+                    {{> "treatment-card" 
+                        title="Allergy Management" 
+                        icon="🌼"
+                        description="Natural allergy relief and immune system strengthening"
+                        conditions="Food allergies, Environmental allergies, Eczema, Hay fever"
+                        approach="Immune modulation, allergen desensitization, gut health optimization, and natural antihistamines"
+                    }}
+                </div>
+            </section>
+
+            {{!-- ICDP Program --}}
+            <section class="icdp-program">
+                <div class="program-header">
+                    <h2>ICDP I Program</h2>
+                    <p class="program-subtitle">Integrated Child Development Program - Phase I</p>
+                </div>
+                
+                <div class="program-content">
+                    <div class="program-description">
+                        <p>
+                            Our signature ICDP I program is a comprehensive approach to child development that addresses 
+                            physical, emotional, and cognitive wellness through integrated natural therapies.
+                        </p>
+                        
+                        <h3>Program Components:</h3>
+                        <ul class="program-features">
+                            <li>Comprehensive health assessment and constitutional analysis</li>
+                            <li>Personalized homeopathic treatment protocols</li>
+                            <li>Nutritional counseling and dietary optimization</li>
+                            <li>Developmental milestone tracking and support</li>
+                            <li>Parent education and family wellness coaching</li>
+                            <li>Regular progress monitoring and plan adjustments</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="program-benefits">
+                        <h3>Program Benefits:</h3>
+                        <div class="benefits-grid">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🧠</div>
+                                <h4>Cognitive Development</h4>
+                                <p>Enhanced focus, memory, and learning capacity</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">💪</div>
+                                <h4>Physical Growth</h4>
+                                <p>Optimal growth patterns and physical development</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">😊</div>
+                                <h4>Emotional Balance</h4>
+                                <p>Improved emotional regulation and social skills</p>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">🛡️</div>
+                                <h4>Immune Strength</h4>
+                                <p>Robust immune system and reduced illness frequency</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Age-Specific Care --}}
+            <section class="age-specific-care">
+                <h2>Age-Specific Care Approaches</h2>
+                <div class="age-groups">
+                    <div class="age-group">
+                        <h3>Infants (0-2 years)</h3>
+                        <ul>
+                            <li>Gentle remedies for colic and digestive issues</li>
+                            <li>Sleep pattern optimization</li>
+                            <li>Breastfeeding support</li>
+                            <li>Developmental milestone support</li>
+                        </ul>
+                    </div>
+                    <div class="age-group">
+                        <h3>Toddlers (2-5 years)</h3>
+                        <ul>
+                            <li>Behavioral and emotional support</li>
+                            <li>Immune system strengthening</li>
+                            <li>Nutritional guidance for picky eaters</li>
+                            <li>Natural remedies for common childhood ailments</li>
+                        </ul>
+                    </div>
+                    <div class="age-group">
+                        <h3>School Age (5-12 years)</h3>
+                        <ul>
+                            <li>Academic performance enhancement</li>
+                            <li>Stress management and anxiety support</li>
+                            <li>Sports injury prevention and recovery</li>
+                            <li>Puberty preparation and support</li>
+                        </ul>
+                    </div>
+                    <div class="age-group">
+                        <h3>Adolescents (12+ years)</h3>
+                        <ul>
+                            <li>Hormonal balance during puberty</li>
+                            <li>Acne and skin health management</li>
+                            <li>Mental health and emotional support</li>
+                            <li>Lifestyle counseling and health education</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Parent Resources --}}
+            <section class="parent-resources">
+                <h2>Resources for Parents</h2>
+                <div class="resources-grid">
+                    <div class="resource-item">
+                        <h3>Home Care Guidelines</h3>
+                        <p>Practical tips for supporting your child's treatment at home</p>
+                    </div>
+                    <div class="resource-item">
+                        <h3>Nutrition Guides</h3>
+                        <p>Age-appropriate meal plans and healthy eating strategies</p>
+                    </div>
+                    <div class="resource-item">
+                        <h3>Developmental Milestones</h3>
+                        <p>Understanding normal development and when to seek support</p>
+                    </div>
+                    <div class="resource-item">
+                        <h3>Emergency Care</h3>
+                        <p>Natural first aid and when to seek immediate medical attention</p>
+                    </div>
+                </div>
+            </section>
+
+            {{!-- Success Story --}}
+            <section class="success-story">
+                <div class="story-card">
+                    <h2>Success Story</h2>
+                    <blockquote>
+                        <p>
+                            "Our 8-year-old son struggled with chronic asthma and frequent respiratory infections. 
+                            After starting the ICDP I program, we've seen remarkable improvement. He's more active, 
+                            sleeps better, and hasn't had a single respiratory infection in over 6 months. 
+                            The holistic approach has truly transformed his health."
+                        </p>
+                        <cite>— Parent of ICDP I Program participant</cite>
+                    </blockquote>
+                </div>
+            </section>
+
+            {{!-- Call to Action --}}
+            <section class="child-wellness-cta">
+                <div class="cta-card">
+                    <h2>Give Your Child the Gift of Optimal Health</h2>
+                    <p>Schedule a consultation to discuss your child's unique needs and create a personalized wellness plan</p>
+                    <div class="cta-actions">
+                        <a href="/appointment/" class="gh-btn gh-primary-btn">Book Child Consultation</a>
+                        <a href="/team/" class="gh-btn gh-outline-btn">Meet Our Pediatric Specialists</a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </article>
+</main>

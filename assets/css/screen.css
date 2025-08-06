@@ -12,3 +12,9 @@
 @import "blog/comment.css";
 @import "blog/related.css";
 @import "misc/utilities.css";
+@import "healthcare/homepage.css";
+@import "healthcare/pages.css";
+@import "healthcare/team.css";
+@import "healthcare/culture.css";
+@import "healthcare/appointment.css";
+@import "healthcare/navigation.css";
